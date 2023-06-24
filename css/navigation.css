@@ -1,0 +1,86 @@
+.menu {
+  margin-bottom: 30px;
+}
+.menu__container {
+  padding: 0;
+  min-width: 100vw;
+}
+.menu__list {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  padding: 0 calc(50vw - var(--container) / 2);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.menu__btn {
+  border-radius: 50px;
+  padding: 7px 8px 7px 40px;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 7px center;
+  white-space: nowrap;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+}
+.menu__btn:hover, .menu__btn:focus-visible {
+  outline: 1px solid #ff7020;
+  outline-offset: -1px;
+}
+.menu__btn--burger {
+  background-image: url(../images/burger.png);
+}
+.menu__btn--active {
+  pointer-events: none;
+  background-color: #ffab08;
+}
+.menu__btn--active:focus {
+  outline: none;
+}
+.menu__btn--snack {
+  background-image: url(../images/snack.png);
+}
+.menu__btn--hot-dog {
+  background-image: url(../images/hot-dog.png);
+}
+.menu__btn--combo {
+  background-image: url(../images/combo.png);
+}
+.menu__btn--shawarma {
+  background-image: url(../images/shawarma.png);
+}
+.menu__btn--pizza {
+  background-image: url(../images/pizza.png);
+}
+.menu__btn--wok {
+  background-image: url(../images/wok.png);
+}
+.menu__btn--dessert {
+  background-image: url(../images/dessert.png);
+}
+.menu__btn--sauce {
+  background-image: url(../images/sauce.png);
+}
+
+@media (min-width: 768px) {
+  .menu__list {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  .menu {
+    margin-bottom: 50px;
+  }
+  .menu__list {
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  .menu__btn {
+    padding: 9px 14px 9px 46px;
+    font-size: 16px;
+    line-height: 22px;
+    background-position: 14px center;
+  }
+}/*# sourceMappingURL=navigation.css.map */

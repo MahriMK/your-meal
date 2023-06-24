@@ -1,0 +1,117 @@
+@import "vars";
+
+.header {
+  // background-image: url("data:image/svg+xml, %3Csvg id='circle' width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='100' cy='100' r='100' fill='%23FFAB08'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='320' height='459' viewBox='0 0 320 459' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='160.5' cy='153.5' r='305.5' fill='%23FFAB08'/%3E%3C/svg%3E%0A");
+  background-size: 611px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 24px 0 30px;
+  margin-bottom: 30px;
+
+  &__logo {
+    color: #fff;
+    width: 150px;
+    height: 29px;
+    margin: 0 auto 24px;
+  }
+
+  &__title-container {
+    padding-bottom: 248px;
+    background: url(../images/burger-bg.svg) bottom/227px no-repeat;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 16px;
+
+    & span {
+      color: $orange;
+      display: block;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 480px) {
+  .header {
+    background-size: 800px;
+    padding-bottom: 44px;
+
+    &__container {
+      max-width: 480px;
+    }
+
+    &__title-container {
+      padding: 27px 0 0 180px;
+      text-align: left;
+      background-position: left;
+      background-size: contain;
+      min-height: 190px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-size: 2580px;
+
+    &__container {
+      max-width: calc(562px + var(--padding-container) * 2);
+    }
+
+    &__title-container {
+      padding-left: 237px;
+      min-height: 229px;
+    }
+
+    &__title {
+      font-size: 36px;
+      margin-bottom: 26px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    background-size: 2880px;
+    padding-bottom: 63px;
+    margin-bottom: 40px;
+
+    &__container {
+      max-width: calc(764px + var(--padding-container) * 2);
+    }
+    &__title-container {
+      padding-top: 46px;
+      padding-left: 326px;
+      min-height: 326px;
+    }
+
+    &__title {
+      font-size: 50px;
+      margin-bottom: 52px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+@media (min-width: 1360px) {
+  .header {
+    &__container {
+      max-width: calc(784px + var(--padding-container) * 2);
+    }
+
+    &__title-container {
+      padding-left: 346px;
+    }
+  }
+}
